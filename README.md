@@ -29,6 +29,11 @@ const App = () => {
 ```
 >data string must be comma seperated values
 
+>choosedValue is the value that user click
+
+>enteredValue is the value of input when user click enter
+
+![](hetu.gif)
 ## License
 
 MIT © [Hetu1107](https://github.com/Hetu1107)

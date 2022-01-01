@@ -1,4 +1,4 @@
-import { searchResultSpanStyle } from "../style/searchStyle";
+import styles from '../styles.module.css'
 export function onchangeSearch(dataString,e,setChoosedValue){
     const values = dataString.split(',');
     const result = [];
@@ -14,7 +14,8 @@ export function onchangeSearch(dataString,e,setChoosedValue){
     if(result.length == 0){
         let a = document.createElement('span');
         a.innerHTML = "not found";
-        a.className = 'search-span';
+        a.className = styles.text;
+        a.id = 'search-span'
         document.getElementById('search-result').appendChild(a);
         return;
     }
@@ -26,9 +27,8 @@ export function onchangeSearch(dataString,e,setChoosedValue){
         else{
             let a = document.createElement('span');
         a.innerText = result[i];
-        a.className = 'search-span';
+        a.className = styles.text;
         a.id = `search-span-${i}`;
-        a.style = {searchResultSpanStyle};
         a.addEventListener('click',()=>{
             setChoosedValue(result[i]);
         })

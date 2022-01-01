@@ -7,6 +7,7 @@ export const searchBoxStyle = {
     padding : '2px 5px',
     position : 'absolute',
     top : '30%',
+    left : '40%',
     display : 'flex',
     flexDirection : 'column',
     justifyContent : 'space-around',
