@@ -2,28 +2,32 @@
 
 > A library to use easy search
 
-[![NPM](https://img.shields.io/npm/v/easy-react-search.svg)](https://www.npmjs.com/package/easy-react-search) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 
 ## Install
 
 ```bash
-npm install --save easy-react-search
+npm install --save search-data-react
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
+import React, { useState } from 'react'
 import MyComponent from 'easy-react-search'
-import 'easy-react-search/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+// importing styles
+import 'easy-react-search/src/style/search.css'
+import { EasySearch } from 'easy-react-search'
+const App = () => {
+  const [choosedValue,setChoosedValue] = useState(''); 
+  const [enteredValue,setOnEnterPress] = useState('');
+  return (
+    <EasySearch dataString='one,two,three,four' setChoosedValue={setChoosedValue} setOnEnterPress={setOnEnterPress}/>
+  )
 }
 ```
+>data string must be comma seperated values
 
 ## License
 
