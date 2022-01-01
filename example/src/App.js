@@ -1,10 +1,12 @@
-import React from 'react'
-
-import { ExampleComponent } from 'easy-react-search'
-import 'easy-react-search/dist/index.css'
-
+import React,{useState} from 'react'
+import { EasySearch } from 'easy-react-search'
+import 'easy-react-search/src/style/search.css'
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [choosedValue,setChoosedValue] = useState(''); 
+  const [enteredValue,setOnEnterPress] = useState('');
+  return (
+    <EasySearch dataString='hetu,patel,mahesh' setChoosedValue={setChoosedValue} setOnEnterPress={setOnEnterPress}/>
+  )
 }
 
 export default App

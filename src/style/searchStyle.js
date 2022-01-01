@@ -1,0 +1,62 @@
+export const searchBoxStyle = {
+    width : '300px',
+    minHeight : '30px',
+    maxHeight : 'fit-content',
+    margin : 0,
+    padding: 0,
+    padding : '2px 5px',
+    position : 'absolute',
+    top : '30%',
+    display : 'flex',
+    flexDirection : 'column',
+    justifyContent : 'space-around',
+    backgroundColor : 'white',
+    // boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+}
+export const searchInputStyle = {
+    width: '80%',
+    height : '30px',
+    border : 'none',
+    padding : 0,
+    margin : 0,
+    outline : 'none',
+    padding : '0 5%',
+    borderRadius : '3px',
+    fontSize : '16px',
+    fontFamily : 'sans-serif',
+    fontWeight : '100',
+    backgroundColor : 'transperant',
+}
+export const searchIconStyle = {
+    width : '10%',
+    display : 'flex',
+    justifyContent : 'center',
+    alignItem :'center',
+    padding : 0,
+    margin : 0,
+    cursor : 'pointer'
+}
+export const searchResultStyle = {
+    margin : 0,
+    padding : 0,
+    display : 'flex',
+    flexDirection : 'column',
+    position : 'absolute',
+    top : '35px',
+    width : '100%',
+    height : '0px',
+    backgroundColor : 'white',
+    justifyContent : 'flex-start',
+    alignItem : 'flex-start',
+    boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+}
+export const searchResultSpanStyle = {
+    width : '90%',
+    padding :'0 5%',
+    height : '37.5px',
+    display : 'flex',
+    alignItems : 'center',
+    cursor : 'pointer',
+    fontSize : '16px',
+    fontFamily : 'sans-serif',
+}
