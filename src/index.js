@@ -3,20 +3,24 @@ import './style/search.css'
 import { searchBoxStyle } from './style/searchStyle'
 import { searchIconStyle } from './style/searchStyle'
 import { searchInputStyle } from './style/searchStyle'
+import { inputAreaStyle } from './style/searchStyle'
 import { onchangeSearch } from './search-code/onChangeSearch'
+import { searchResultStyle } from './style/searchStyle'
 
 export const EasySearch = ({dataString,setChoosedValue,setOnEnterPress}) => {
   window.addEventListener('load',()=>{
-    let check = document.getElementById("search-main-box");
-    document.body.addEventListener("click", (event) => {
-      if (check.contains(event.target)) {
-          
-      } else {
+    var check = document.getElementById("search-main-box");
+    document.addEventListener("click", (event) =>{
+      let value = check.contains(event.target);
+      if (value === false)
+      {
         document.getElementById("search-result").style.height = "0px";
-            let parent = document.getElementById("search-result");
-            while (parent.firstChild) {
-              parent.removeChild(parent.firstChild);
-            }
+        var parent = document.getElementById("search-result");
+      
+        while (parent.firstChild) {
+          parent.removeChild(parent.firstChild);
+        }
+          
       }
     });
   })
@@ -26,7 +30,7 @@ export const EasySearch = ({dataString,setChoosedValue,setOnEnterPress}) => {
     id="search-main-box"
     style={searchBoxStyle}
   >
-    <div className="input-area">
+    <div className="input-area" style={inputAreaStyle}>
     <input
       onFocus={() => {
         document.getElementById("search-result").style.height = "300px";
@@ -50,7 +54,7 @@ export const EasySearch = ({dataString,setChoosedValue,setOnEnterPress}) => {
       src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png"
     />
     </div>
-    <div id="search-result" className="search-result"></div>
+    <div id="search-result" className="search-result" style={searchResultStyle}></div>
   </div>
   )
 }

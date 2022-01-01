@@ -13,6 +13,18 @@ export const searchBoxStyle = {
     backgroundColor : 'white',
     // boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
 }
+export const inputAreaStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-around',
+    backgroundColor: 'white',
+    boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+    position: 'relative',
+    margin: '0',
+    padding: '0',
+} 
+
 export const searchInputStyle = {
     width: '80%',
     height : '30px',
@@ -41,14 +53,15 @@ export const searchResultStyle = {
     padding : 0,
     display : 'flex',
     flexDirection : 'column',
-    position : 'absolute',
-    top : '35px',
+    position : 'relative',
+    top : '3px',
     width : '100%',
     height : '0px',
     backgroundColor : 'white',
     justifyContent : 'flex-start',
     alignItem : 'flex-start',
     boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+    transition: 'all 200ms ease',
 }
 export const searchResultSpanStyle = {
     width : '90%',
@@ -59,4 +72,6 @@ export const searchResultSpanStyle = {
     cursor : 'pointer',
     fontSize : '16px',
     fontFamily : 'sans-serif',
+    transition: 'all 200ms ease',
+    position: 'relative',
 }

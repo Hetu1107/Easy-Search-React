@@ -1,3 +1,4 @@
+import { searchResultSpanStyle } from "../style/searchStyle";
 export function onchangeSearch(dataString,e,setChoosedValue){
     const values = dataString.split(',');
     const result = [];
@@ -27,8 +28,15 @@ export function onchangeSearch(dataString,e,setChoosedValue){
         a.innerText = result[i];
         a.className = 'search-span';
         a.id = `search-span-${i}`;
+        a.style = {searchResultSpanStyle};
         a.addEventListener('click',()=>{
             setChoosedValue(result[i]);
+        })
+        a.addEventListener('mouseover',()=>{
+            document.getElementById(`search-span-${i}`).style.backgroundColor = 'rgba(0, 0, 0, 0.164)';
+        })
+        a.addEventListener('mouseout',()=>{
+            document.getElementById(`search-span-${i}`).style.backgroundColor = 'white';
         })
         document.getElementById('search-result').appendChild(a);
         }
