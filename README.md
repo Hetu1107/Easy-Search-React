@@ -14,11 +14,10 @@ npm install --save search-data-react
 
 ```jsx
 import React, { useState } from 'react'
-import MyComponent from 'search-data-react'
 
 // importing styles
-import 'easy-react-search/src/style/search.css'
-import { EasySearch } from 'easy-react-search'
+import 'search-data-react/dist/index.css'
+import { EasySearch } from 'search-data-react'
 const App = () => {
   const [choosedValue,setChoosedValue] = useState(''); 
   const [enteredValue,setOnEnterPress] = useState('');
