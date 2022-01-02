@@ -14,7 +14,7 @@ npm install --save search-data-react
 
 ```jsx
 import React, { useState } from 'react'
-import MyComponent from 'easy-react-search'
+import MyComponent from 'search-data-react'
 
 // importing styles
 import 'easy-react-search/src/style/search.css'
