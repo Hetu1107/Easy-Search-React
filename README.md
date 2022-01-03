@@ -1,8 +1,17 @@
 # easy-react-search
 
-> A library to use easy search
+> A library for making search bar filters.
 
+<br>
 
+## what is the use of this ?
+```
+If you want to make search filter on comma seperated data then this library will help you to do so.
+
+You just have to pass the comma seperated data and on change of input the filter output will be shown below the input box jus like any search bar.
+```
+
+<br>
 
 ## Install
 
@@ -32,7 +41,13 @@ const App = () => {
 
 >enteredValue is the value of input when user click enter
 
+<br>
+<br>
+
 ![](hetu.gif)
+
+<br>
+
 ## License
 
 MIT © [Hetu1107](https://github.com/Hetu1107)
